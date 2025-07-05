@@ -66,4 +66,84 @@ h3 {
   font-size: 1.125rem;
   color: #000000;
 }
+
+/* ----------------- Header ----------------- */
+
+.header {
+  margin: 20px 70px 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-area: header;
+}
+
+.header__left {
+  display: flex;
+  justify-content: center;
+}
+
+.header__menu {
+  margin-right: 28px;
+}
+
+.header__logo {
+  margin: 10px 0;
+  margin-right: 60px;
+}
+
+.header__search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 23px;
+  padding-right: 12px;
+  max-width: 830px;
+  width: 100%;
+  background: rgba(235, 235, 235, .3);
+  border-radius: 22px;
+}
+
+.header__search-input {
+  display: block;
+  width: 100%;
+}
+
+.header__search-icon {
+  width: 19px;
+  height: 19px;
+}
+
+.header__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.header__icons {
+  display: flex;
+  gap: 50px;
+}
+
+.header__notifications {
+  position: relative;
+}
+
+.header__notification-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+  border: 1px solid #FFFFFF;
+  border-radius: 100%;
+  background: #FF0000;
+}
+
 }
