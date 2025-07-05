@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube | Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
@@ -15,14 +15,19 @@
         <a href="#" class="header__logo">
           <img src="./assets/logo.png" alt="logo" />
         </a>
-        <div class="header__search">
-          <input type="text" class="header__search-input" />
+        <label for="search-input" class="header__search">
+          <input
+            type="text"
+            class="header__search-input"
+            id="search-input"
+            placeholder="Search"
+          />
           <img
             src="./assets/icons/search.svg"
             alt="search"
             class="header__search-icon"
           />
-        </div>
+        </label>
       </div>
       <div class="header__right">
         <div class="header__icons">
