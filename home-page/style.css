@@ -230,4 +230,120 @@ h3 {
   margin-top: 105px;
 }
 
+/* ----------------- Main ----------------- */
+
+main {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  grid-area: main;
+}
+
+/* ----------------- Person ----------------- */
+
+.person {
+  max-width: 1516px;
+  width: 100%;
+}
+
+.person__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.person__info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.person__avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.person__name {
+  display: inline-block;
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: #19202C;
+}
+
+.controls {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.controls__left {
+  margin-right: 10px;
+}
+
+.controls button {
+  cursor: pointer;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  background: #000000;
+  border-radius: 100%;
+  opacity: .25;
+  transition: opacity .3s;
+}
+
+.controls button:hover {
+  opacity: 1;
+}
+
+.controls img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+
+.card__preview {
+  position: relative;
+}
+
+.card__preview-timer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 47px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 14px;
+  background: rgba(0, 0, 0, .3);
+  border-radius: 12px;
+}
+
+.card__info-title {
+  margin-top: 10px;
+  color: #19202C;
+}
+
+.card__info {
+  margin-top: 4px;
+}
+
+.card__info-meta,
+.card__info-author {
+  font-size: 0.81rem;
+  color: #C2C2C2;
+}
+
+.card__info-author {
+  float: right;
 }
