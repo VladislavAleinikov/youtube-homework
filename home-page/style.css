@@ -146,4 +146,88 @@ h3 {
   background: #FF0000;
 }
 
+/* ----------------- Aside ----------------- */
+
+.aside {
+  margin-top: 45px;
+  padding-left: 30px;
+  max-width: 255px;
+  width: 100%;
+  background: #FFFFFF;
+  grid-area: aside;
+}
+
+.aside__links {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.links-main {
+  gap: 25px;
+}
+
+.aside__link,
+.aside__setting {
+  display: flex;
+  width: fit-content;
+}
+
+.aside__link-icon {
+  display: inline-block;
+  width: 31px;
+}
+
+.aside__link span,
+.aside__link path {
+  transition: fill .3s,
+    opacity .3s,
+    color .3s;
+}
+
+.aside__link:hover span,
+.aside__link.link--active span {
+  color: #FF0000;
+}
+
+.aside__link:hover path,
+.aside__link.link--active path {
+  opacity: 1;
+  fill: #FF0000;
+}
+
+.aside__subs-title {
+  margin-bottom: 30px;
+}
+
+.aside__subs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.aside__sub {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aside__sub-avatar {
+  width: 26px;
+  height: 26px;
+}
+
+.aside__sub span {
+  transition: color .3s;
+}
+
+.aside__sub:hover span {
+  color: #000000;
+}
+
+.link-setting {
+  margin-top: 105px;
+}
+
 }
