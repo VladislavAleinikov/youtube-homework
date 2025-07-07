@@ -1,0 +1,14 @@
+.recomended{
+  max-width: 367px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  row-gap: 25px;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
