@@ -370,16 +370,15 @@
             />
             <span class="person__name">Dollie Blair</span>
           </div>
-          <div class="person__controls controls">
+          <div class="person__controls controls" id="person-controls">
             <button class="controls__left">
               <img src="./assets/icons/left-arrow.svg" alt="left-arrow" />
-            </button>
-            <button class="controls__right">
+            </button><button class="controls__right">
               <img src="./assets/icons/right-arrow.svg" alt="right-arrow" />
             </button>
           </div>
         </div>
-        <ul class="person__slider slider">
+        <ul data-slider-for="person" class="person__slider slider">
           <li class="slider__card card">
             <a href="#" class="card-link">
               <div class="card__preview">
@@ -463,58 +462,55 @@
       <section class="recomended">
         <div class="recomended__top">
           <h2 class="recomended__title">Recommended</h2>
-          <div class="recomended__controls controls">
+          <div class="recomended__controls controls" id="recomended-controls">
             <button class="controls__left">
               <img src="./assets/icons/left-arrow.svg" alt="left-arrow" />
-            </button>
-            <button class="controls__right">
+            </button><button class="controls__right">
               <img src="./assets/icons/right-arrow.svg" alt="right-arrow" />
             </button>
           </div>
-          <ul class="recomended__slider slider slider--wide">
-            <li class="slider__card card">
-              <a href="#" class="card-link">
-                <div class="card__preview">
-                  <img src="./assets/previews/preview-7.png" alt="preview" />
-                  <span class="card__preview-timer">3:40</span>
-                </div>
-                <h4 class="card__info-title">
-                  Dude You Re Getting A Telescope
-                </h4>
-                <div class="card__info">
-                  <span class="card__info-meta">34k views · 5 months ago</span>
-                  <span class="card__info-author">Gussie French</span>
-                </div>
-              </a>
-            </li>
-            <li class="slider__card card">
-              <a href="#" class="card-link">
-                <div class="card__preview">
-                  <img src="./assets/previews/preview-8.png" alt="preview" />
-                  <span class="card__preview-timer">2:12</span>
-                </div>
-                <h4 class="card__info-title">Moon Gazing</h4>
-                <div class="card__info">
-                  <span class="card__info-meta">54k views · 11 months ago</span>
-                  <span class="card__info-author">Edward Osborne</span>
-                </div>
-              </a>
-            </li>
-            <li class="slider__card card">
-              <a href="#" class="card-link">
-                <div class="card__preview">
-                  <img src="./assets/previews/preview-9.png" alt="preview" />
-                  <span class="card__preview-timer">2:12</span>
-                </div>
-                <h4 class="card__info-title">Moon Gazing</h4>
-                <div class="card__info">
-                  <span class="card__info-meta">125k views · 4 months ago</span>
-                  <span class="card__info-author">Dollie Blair</span>
-                </div>
-              </a>
-            </li>
-          </ul>
         </div>
+        <ul data-slider-for="recomended" class="recomended__slider slider slider--wide">
+          <li class="slider__card card">
+            <a href="#" class="card-link">
+              <div class="card__preview">
+                <img src="./assets/previews/preview-7.png" alt="preview" />
+                <span class="card__preview-timer">3:40</span>
+              </div>
+              <h4 class="card__info-title">Dude You Re Getting A Telescope</h4>
+              <div class="card__info">
+                <span class="card__info-meta">34k views · 5 months ago</span>
+                <span class="card__info-author">Gussie French</span>
+              </div>
+            </a>
+          </li>
+          <li class="slider__card card">
+            <a href="#" class="card-link">
+              <div class="card__preview">
+                <img src="./assets/previews/preview-8.png" alt="preview" />
+                <span class="card__preview-timer">2:12</span>
+              </div>
+              <h4 class="card__info-title">Moon Gazing</h4>
+              <div class="card__info">
+                <span class="card__info-meta">54k views · 11 months ago</span>
+                <span class="card__info-author">Edward Osborne</span>
+              </div>
+            </a>
+          </li>
+          <li class="slider__card card">
+            <a href="#" class="card-link">
+              <div class="card__preview">
+                <img src="./assets/previews/preview-9.png" alt="preview" />
+                <span class="card__preview-timer">2:12</span>
+              </div>
+              <h4 class="card__info-title">Moon Gazing</h4>
+              <div class="card__info">
+                <span class="card__info-meta">125k views · 4 months ago</span>
+                <span class="card__info-author">Dollie Blair</span>
+              </div>
+            </a>
+          </li>
+        </ul>
       </section>
       <section class="channel">
         <div class="channel__top">
@@ -530,7 +526,7 @@
           <button class="channel__subscribe button-subscribe">
             Subscribe 2.3m
           </button>
-          <div class="channel__controls controls">
+          <div class="channel__controls controls" id="channel-controls">
             <button class="controls__left">
               <img src="./assets/icons/left-arrow.svg" alt="left-arrow" />
             </button>
@@ -538,7 +534,8 @@
               <img src="./assets/icons/right-arrow.svg" alt="right-arrow" />
             </button>
           </div>
-          <ul class="channel__slider slider">
+        </div>
+          <ul data-slider-for="channel" class="channel__slider slider">
             <li class="slider__card card">
               <a href="#" class="card-link">
                 <div class="card__preview">
@@ -618,8 +615,9 @@
               </a>
             </li>
           </ul>
-        </div>
       </section>
     </main>
+
+    <script src="../scripts/slider.js"></script>
   </body>
 </html>
