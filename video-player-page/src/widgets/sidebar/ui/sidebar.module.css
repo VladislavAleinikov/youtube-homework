@@ -1,0 +1,83 @@
+.sidebar {
+  margin-top: 45px;
+  max-width: 255px;
+  padding: 0;
+  width: 0%;
+  background: #FFFFFF;
+  grid-area: aside;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.show {
+  width: 100%;
+  padding-left: 30px;
+}
+
+.links {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.links-main {
+  gap: 25px;
+}
+
+.link,
+.setting {
+  display: flex;
+  width: fit-content;
+}
+
+.icon {
+  display: inline-block;
+  width: 31px;
+}
+
+.link span,
+.link path {
+  transition: fill .3s,
+    opacity .3s,
+    color .3s;
+}
+
+.link:hover span,
+.link.active span {
+  color: #FF0000;
+}
+
+.link:hover path,
+.link.active path {
+  opacity: 1;
+  fill: #FF0000;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.subscribers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.subscriber {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscriber span {
+  transition: color .3s;
+}
+
+.subscriber:hover span {
+  color: #000000;
+}
+
+.link-setting {
+  margin-top: 105px;
+}
