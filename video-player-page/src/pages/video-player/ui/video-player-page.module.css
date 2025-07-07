@@ -1,0 +1,12 @@
+.video-player-page {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  margin: 25px 70px 0 80px;
+  display: flex;
+  flex-grow: 1;
+  gap: 40px;
+}
