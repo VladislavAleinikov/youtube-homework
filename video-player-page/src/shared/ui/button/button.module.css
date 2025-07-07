@@ -1,0 +1,42 @@
+.button {
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background .3s, color .3s;
+}
+
+.primary {
+  margin-left: auto;
+  background: #FF0000;
+  border-radius: 20px;
+  color: #FFFFFF;
+}
+
+.primary:hover {
+  background: #e20000;
+}
+
+.ghost {
+  border-radius: 20px;
+  color: #192646;
+  background: #EBEBEB;
+}
+
+.ghost:hover,
+.active {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 100%;
+}
+
+.icon:hover {
+  background: #EBEBEB;
+}

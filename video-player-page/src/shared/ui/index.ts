@@ -1,3 +1,4 @@
+export { Button } from "./button";
 export { Avatar } from "./avatar";
 export { Burger } from "./icons/burger";
 export { Camera } from "./icons/camera";
