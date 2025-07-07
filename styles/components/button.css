@@ -1,0 +1,25 @@
+.button--subscribe {
+  cursor: pointer;
+  margin-left: auto;
+  padding: 10px 20px;
+  background: #FF0000;
+  border-radius: 20px;
+  color: #FFFFFF;
+  transition: background .3s;
+}
+
+.button--subscribe:hover {
+  background: #e20000;
+}
+
+.button--icon {
+  padding: 10px;
+  width: 41px;
+  height: 41px;
+  background: #FFFFFF;
+  border-radius: 100%;
+}
+
+.button--icon:hover {
+  background: #898989;
+}
