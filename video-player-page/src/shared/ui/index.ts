@@ -2,6 +2,7 @@ export { Button } from "./button";
 export { Avatar } from "./avatar";
 export { Title } from "./title";
 export { Swithcer } from "./switcher";
+export { VideoPlayer } from "./video-player";
 export { Burger } from "./icons/burger";
 export { Camera } from "./icons/camera";
 export { Dislike } from "./icons/dislike";
