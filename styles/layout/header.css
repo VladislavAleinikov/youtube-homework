@@ -51,7 +51,7 @@
 
 .header__icons {
   display: flex;
-  gap: 50px;
+  gap: 20px;
 }
 
 .header__notifications {
@@ -60,8 +60,8 @@
 
 .header__notification-count {
   position: absolute;
-  top: -6px;
-  right: -6px;
+  top: 6px;
+  right: 9px;
   width: 18px;
   height: 18px;
   display: flex;
