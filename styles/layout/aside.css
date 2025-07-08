@@ -1,10 +1,17 @@
 .aside {
   margin-top: 45px;
-  padding-left: 30px;
   max-width: 255px;
-  width: 100%;
+  padding: 0;
+  width: 0%;
   background: #FFFFFF;
   grid-area: aside;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.aside--show {
+  width: 100%;
+  padding-left: 30px;
 }
 
 .aside__links {
