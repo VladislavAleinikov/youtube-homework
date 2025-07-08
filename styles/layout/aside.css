@@ -25,6 +25,18 @@
   gap: 25px;
 }
 
+.aside__links:not(.links-main) {
+  height: 20px;
+  max-height: fit-content;
+  overflow: hidden;
+  justify-content: end;
+  transition: height .5s;
+}
+
+.aside__links.aside__links--show {
+  height: 366px;
+}
+
 .aside__link,
 .aside__setting {
   display: flex;
@@ -52,6 +64,31 @@
 .aside__link.link--active path {
   opacity: 1;
   fill: #FF0000;
+}
+
+.aside__show-more svg {
+  transition: transform .3s;
+  transform: rotate(180deg);
+}
+
+.aside__show-more--active svg {
+  transform: rotate(0deg);
+}
+
+.aside__show-more--active .show-more--show {
+  display: block;
+}
+
+.show-more--show {
+  display: none;
+}
+
+.aside__show-more--active .show-more--hide {
+  display: none;
+}
+
+.show-more--hide {
+  display: block;
 }
 
 .aside__subs-title {
