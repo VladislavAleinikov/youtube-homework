@@ -8,10 +8,6 @@
   transition: background .3s;
 }
 
-.button--subscribe:hover {
-  background: #e20000;
-}
-
 .button--icon {
   cursor: pointer;
   width: 50px;
@@ -25,6 +21,12 @@
   transition: background .3s;
 }
 
-.button--icon:hover {
-  background: #EBEBEB;
+@media(hover: hover) {
+  .button--subscribe:hover {
+    background: #e20000;
+  }
+
+  .button--icon:hover {
+    background: #EBEBEB;
+  }
 }

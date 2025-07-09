@@ -55,17 +55,6 @@
     color .3s;
 }
 
-.aside__link:hover span,
-.aside__link.link--active span {
-  color: #FF0000;
-}
-
-.aside__link:hover path,
-.aside__link.link--active path {
-  opacity: 1;
-  fill: #FF0000;
-}
-
 .aside__show-more svg {
   transition: transform .3s;
   transform: rotate(180deg);
@@ -116,10 +105,28 @@
   transition: color .3s;
 }
 
-.aside__sub:hover span {
-  color: #000000;
-}
-
 .link-setting {
   margin-top: 105px;
+}
+
+@media(hover: hover) {
+
+  .aside__link:hover span,
+  .aside__link.link--active span {
+    color: #FF0000;
+  }
+
+  .aside__link:hover path,
+  .aside__link.link--active path {
+    opacity: 1;
+    fill: #FF0000;
+  }
+
+  .aside__sub:hover span {
+    color: #000000;
+  }
+
+  .aside__sub:hover span {
+    color: #000000;
+  }
 }
