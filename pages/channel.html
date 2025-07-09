@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Channel Page</title>
+    <link rel="stylesheet" href="../styles/pages/channel.css" />
   </head>
   <body>
     <header class="header">
@@ -46,7 +47,7 @@
         </a>
       </div>
     </header>
-    <aside class="aside">
+    <aside class="aside aside--show">
       <ul class="aside__links links-main">
         <li class="aside__links-item">
           <a href="#" class="aside__link link--active">
@@ -112,7 +113,7 @@
           </a>
         </li>
       </ul>
-      <ul class="aside__links">
+      <ul class="aside__links aside__links--show">
         <li class="aside__links-item">
           <a href="#" class="aside__link">
             <div class="aside__link-icon">
@@ -268,7 +269,7 @@
           </a>
         </li>
         <li class="aside__links-item">
-          <a href="#" class="aside__link">
+          <a href="#" class="aside__link aside__show-more show-more--active">
             <div class="aside__link-icon">
               <svg
                 width="14"
@@ -284,7 +285,8 @@
                 />
               </svg>
             </div>
-            <span>Show more</span>
+            <span class="show-more--show">Show more</span>
+            <span class="show-more--hide">Hide</span>
           </a>
         </li>
       </ul>
@@ -373,6 +375,7 @@
           />
           <div class="hero__autohr-info">
             <span class="hero__autohr-name">Margaret Phelps</span>
+            <br />
             <span class="hero__autohr-subscibers">245K subscribed</span>
           </div>
           <a href="#" class="hero__notification button--icon">
@@ -385,7 +388,7 @@
       </section>
       <nav class="navbar">
         <ul class="navbar__list">
-          <li class="navbar__item">
+          <li class="navbar__item navbar__item--active">
             <a href="" class="navbar__link">Home</a>
           </li>
           <li class="navbar__item">
@@ -546,5 +549,9 @@
         </ul>
       </section>
     </main>
+
+    <script src="../scripts/slider.js"></script>
+    <script src="../scripts/aside.js"></script>
+    <script src="../scripts/aside-links.js"></script>
   </body>
 </html>
