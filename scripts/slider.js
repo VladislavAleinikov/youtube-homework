@@ -3,8 +3,8 @@ document.querySelectorAll(".slider").forEach(addSliderEvents);
 function addSliderEvents(slider) {
   const sliderFor = slider.dataset.sliderFor;
   const controls = document.getElementById(`${sliderFor}-controls`);
-  const slides = slider.children.length;
   const slideWidth = slider.classList.contains("slider--wide") ? 580 : 290;
+  const slides = slider.children.length - Math.floor(slider.offsetWidth / slideWidth);
   let currentSlide = 0;
 
   const changeSlide = () => {
@@ -14,14 +14,14 @@ function addSliderEvents(slider) {
   controls.firstElementChild.addEventListener("click", (e) => {
     currentSlide--;
     if (0 > currentSlide) {
-      currentSlide = slides - 1;
+      currentSlide = slides;
     };
     changeSlide();
   });
 
   controls.lastElementChild.addEventListener("click", (e) => {
     currentSlide++;
-    if (slides - 1 < currentSlide) {
+    if (slides < currentSlide) {
       currentSlide = 0;
     };
     changeSlide();
