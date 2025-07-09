@@ -1,0 +1,35 @@
+@import url("../base/fonts.css");
+@import url("../base/normalize.css");
+@import url("../components/slider.css");
+@import url("../components/card.css");
+@import url("../components/controls.css");
+@import url("../components/button.css");
+@import url("../layout/header.css");
+@import url("../layout/hero.css");
+@import url("../layout/aside.css");
+@import url("../layout/navbar.css");
+
+main {
+  width: 1px;
+  margin: 25px 70px 0 80px;
+  flex-grow: 1;
+  display: grid;
+  grid-template-areas:
+    "hero hero"
+    "navbar recomended"
+    "last-video recomended"
+    "videos videos";
+  overflow: hidden;
+}
+
+.videos {
+  grid-area: videos;
+  max-width: 1536px;
+  width: 100%;
+}
+
+.videos__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
