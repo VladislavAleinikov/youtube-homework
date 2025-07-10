@@ -151,7 +151,7 @@
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #F1F1F1;
-    z-index: 10;
+    z-index: 1000;
   }
 
   .aside__links {
