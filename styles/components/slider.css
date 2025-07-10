@@ -7,3 +7,10 @@
   gap: 40px;
   transition: left .3s;
 }
+
+@media (max-width: 576px) {
+  .slider{
+    flex-direction: column;
+    gap: 30px;
+  }
+}
