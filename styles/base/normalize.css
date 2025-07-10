@@ -36,11 +36,16 @@ button {
 
 input[type=text] {
   font-size: 1rem;
+  outline: none;
   border: none;
   background: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
 }
 
 li {
