@@ -66,6 +66,7 @@
 }
 
 .header__right {
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -145,7 +146,21 @@
   }
 
   .header__icons {
-    display: none;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px #000000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s;
+  }
+
+  .header__icons.icons--show {
+    opacity: 1;
+    visibility: visible;
   }
 
   .header__avatar img {
@@ -157,7 +172,7 @@
     display: none;
   }
 
-  .header__show-more{
+  .header__show-more {
     display: block;
   }
 }
