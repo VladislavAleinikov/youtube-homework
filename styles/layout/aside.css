@@ -1,6 +1,6 @@
 .aside {
   margin-top: 45px;
-  max-width: 255px;
+  max-width: 190px;
   padding: 0;
   width: 0%;
   background: #FFFFFF;
@@ -11,14 +11,13 @@
 
 .aside--show {
   width: 100%;
-  padding-left: 30px;
 }
 
 .aside__links {
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 27px;
 }
 
 .links-main {
@@ -34,7 +33,7 @@
 }
 
 .aside__links.aside__links--show {
-  height: 366px;
+  height: 360px;
 }
 
 .aside__link,
@@ -45,7 +44,7 @@
 
 .aside__link-icon {
   display: inline-block;
-  width: 31px;
+  width: 35px;
 }
 
 .aside__link span,
@@ -53,6 +52,15 @@
   transition: fill .3s,
     opacity .3s,
     color .3s;
+}
+
+.aside__link.link--active span {
+  color: #FF0000;
+}
+
+.aside__link.link--active path {
+  opacity: 1;
+  fill: #FF0000;
 }
 
 .aside__show-more svg {
@@ -111,13 +119,11 @@
 
 @media(hover: hover) {
 
-  .aside__link:hover span,
-  .aside__link.link--active span {
+  .aside__link:hover span {
     color: #FF0000;
   }
 
-  .aside__link:hover path,
-  .aside__link.link--active path {
+  .aside__link:hover path {
     opacity: 1;
     fill: #FF0000;
   }
