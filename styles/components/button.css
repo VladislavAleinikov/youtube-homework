@@ -5,6 +5,7 @@
   background: #FF0000;
   border-radius: 20px;
   color: #FFFFFF;
+  white-space: nowrap;
   transition: background .3s;
 }
 
@@ -28,5 +29,12 @@
 
   .button--icon:hover {
     background: #EBEBEB;
+  }
+}
+
+@media (max-width: 576px) {
+  .button--subscribe{
+    margin-left: 0;
+    font-size: 0.75rem;
   }
 }
