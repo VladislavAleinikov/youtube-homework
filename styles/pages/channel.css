@@ -12,7 +12,8 @@
 
 main {
   width: 1px;
-  margin: 25px 70px 0 80px;
+  margin-top: 25px;
+  margin-left: 35px;
   flex-grow: 1;
   display: grid;
   grid-template-areas:

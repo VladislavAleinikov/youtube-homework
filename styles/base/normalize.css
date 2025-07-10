@@ -12,6 +12,9 @@ html {
 
 body {
   margin: auto;
+  margin-bottom: 60px;
+  padding-right: 70px;
+  padding-left: 30px;
   max-width: 1920px;
   width: 100%;
   display: grid;
@@ -19,6 +22,8 @@ body {
   grid-template-areas:
     "header header"
     "aside main";
+  display: flex;
+  flex-wrap: wrap;
 }
 
 a {
