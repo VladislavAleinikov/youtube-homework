@@ -1,5 +1,5 @@
 .navbar {
-  margin-top: 20px;
+  margin-top: 15px;
   grid-area: navbar;
 }
 
@@ -43,8 +43,38 @@
   font-weight: 700;
 }
 
+.navbar__show-more {
+  display: none;
+}
+
 @media(hover: hover) {
   .navbar__item:hover::after {
     width: 100%;
   }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin-top: 30px;
+  }
+
+  .navbar__list {
+    justify-content: start;
+    gap: 35px;
+  }
+
+  .navbar__item{
+    padding: 3px;
+  } .navbar__item:nth-child(n+4) {
+    display: none;
+  }
+
+  .navbar__item:last-child {
+    display: block;
+  }
+
+  .navbar__link {
+    font-size: 0.875rem;
+  }
+
 }
