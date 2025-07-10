@@ -29,7 +29,7 @@ main {
   margin-left: 35px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 55px;
   overflow: hidden;
   grid-area: main;
 }
@@ -37,7 +37,6 @@ main {
 /* ----------------- Person ----------------- */
 
 .person {
-  max-width: 1536px;
   width: 100%;
 }
 
@@ -70,7 +69,6 @@ main {
 /* ----------------- Recomended ----------------- */
 
 .recomended {
-  max-width: 1536px;
   width: 100%;
 }
 
@@ -83,7 +81,6 @@ main {
 /* ----------------- Recomended ----------------- */
 
 .channel {
-  max-width: 1536px;
   width: 100%;
 }
 
@@ -96,7 +93,9 @@ main {
 .channel__info {
   display: flex;
   align-items: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 5px;
 }
 
 .channel__avatar {
@@ -122,4 +121,28 @@ main {
 
 .channel__controls {
   margin-left: 40px;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 0;
+    margin-top: 20px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .person__top {
+    display: none;
+  }
+
+  .person__slider {
+    margin-top: unset;
+  }
+
+  .channel__top {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
 }
