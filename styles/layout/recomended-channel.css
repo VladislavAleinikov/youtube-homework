@@ -1,0 +1,32 @@
+.recomended-channel {
+  margin-top: 25px;
+  margin-right: 80px;
+  grid-area: recomended;
+}
+
+.recomended-channel__list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.recomended-channel__link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  white-space: nowrap;
+}
+
+.recomended-channel__name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #19202C;
+}
+
+
+@media (max-width: 1200px) {
+  .recomended-channel {
+    display: none;
+  }
+}

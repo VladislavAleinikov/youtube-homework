@@ -8,6 +8,7 @@
 @import url("../layout/hero.css");
 @import url("../layout/aside.css");
 @import url("../layout/navbar.css");
+@import url("../layout/recomended-channel.css");
 
 main {
   width: 1px;
