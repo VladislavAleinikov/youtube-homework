@@ -49,9 +49,7 @@
 
 .aside__link span,
 .aside__link path {
-  transition: fill .3s,
-    opacity .3s,
-    color .3s;
+  transition: .3s;
 }
 
 .aside__link.link--active span {
