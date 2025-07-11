@@ -11,7 +11,9 @@ import {
   VideoPlayer,
 } from "../../../shared/ui";
 
-export const Video = () => {
+interface VideoProps{
+  calssName?: string;
+}
   const [like, setLike] = useState(false);
   const [dislike, setDislike] = useState(false);
 
@@ -28,7 +30,7 @@ export const Video = () => {
     setDislike((prev) => !prev);
   };
   return (
-    <section className={styles.video}>
+    <section className={`${styles.video} ${calssName}`}>
       <VideoPlayer className={styles.player} />
       <Title
         size="xl"
