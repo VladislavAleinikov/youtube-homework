@@ -1,5 +1,5 @@
 export { Button } from "./button";
-export { Avatar } from "./avatar";
+export { Avatar } from "./avatar/avatar";
 export { Title } from "./title/title";
 export { Switcher } from "./switcher/switcher";
 export { VideoPlayer } from "./video-player/video-player";
