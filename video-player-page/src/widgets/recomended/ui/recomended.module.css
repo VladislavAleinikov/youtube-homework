@@ -1,14 +1,36 @@
-.recomended{
+.recomended {
   max-width: 367px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: end;
-  row-gap: 25px;
+  row-gap: 15px;
 }
 
-.cards{
+.cards {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+@media (max-width: 1200px) {
+  .recomended {
+    max-width: 250px;
+  }
+
+  .recomended img {
+    aspect-ratio: 16/9;
+  }
+}
+
+@media (max-width: 768px) {
+  .recomended {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  .cards {
+    width: 100%;
+  }
 }
