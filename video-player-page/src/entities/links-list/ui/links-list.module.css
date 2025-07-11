@@ -1,0 +1,109 @@
+.links {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.links.show,
+.links.hide {
+  max-height: fit-content;
+  overflow: hidden;
+  justify-content: end;
+  transition: height .5s;
+  gap: 27px;
+}
+
+.links.hide {
+  height: 20px;
+}
+
+.links.show {
+  height: 360px;
+}
+
+.link {
+  display: flex;
+  width: fit-content;
+}
+
+.icon {
+  display: inline-block;
+  width: 31px;
+}
+
+.link span,
+.link path {
+  transition: .3s;
+}
+
+.link.active span {
+  color: #FF0000;
+}
+
+.link.active path {
+  opacity: 1;
+  fill: #FF0000;
+}
+
+.show-more svg {
+  transition: transform .3s;
+  transform: rotate(180deg);
+}
+
+.show-more.active svg {
+  transform: rotate(0deg);
+}
+
+.show-more.active .show-more--show {
+  display: block;
+}
+
+.show-more--show {
+  display: none;
+}
+
+.show-more.active .show-more--hide {
+  display: none;
+}
+
+.show-more--hide {
+  display: block;
+}
+
+@media(hover: hover) {
+  .link:hover span {
+    color: #FF0000;
+  }
+
+  .link:hover path {
+    opacity: 1;
+    fill: #FF0000;
+  }
+}
+
+@media (max-width: 768px) {
+  .links {
+    margin: 0;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .link {
+    position: relative;
+    height: 36px;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .link span {
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+    font-size: 0.625rem;
+  }
+
+  .icon {
+    width: unset;
+  }
+}

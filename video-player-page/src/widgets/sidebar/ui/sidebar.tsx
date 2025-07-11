@@ -9,27 +9,27 @@ import {
   LikedVideos,
   Music,
   Setting,
-  ShowMore,
   Subscriptions,
   Title,
   Trending,
   WatchLater,
 } from "../../../shared/ui";
 import styles from "./sidebar.module.css";
+import type { LinksListType } from "../../../shared/types";
+import { LinksList } from "../../../entities/links-list";
 
 interface SidebarProps {
   className?: string;
   show: boolean;
 }
 
-const mainLinks: { icon: React.ReactNode; text: string; isActive: boolean }[] =
-  [
-    { icon: <Home />, text: "Home", isActive: true },
-    { icon: <Trending />, text: "Trending", isActive: false },
-    { icon: <Subscriptions />, text: "Subscriptions", isActive: false },
-  ];
+const mainLinks: LinksListType = [
+  { icon: <Home />, text: "Home", isActive: true },
+  { icon: <Trending />, text: "Trending", isActive: false },
+  { icon: <Subscriptions />, text: "Subscriptions", isActive: false },
+];
 
-const links: { icon: React.ReactNode; text: string }[] = [
+const links: LinksListType = [
   { icon: <Library />, text: "Library" },
   { icon: <History />, text: "History" },
   { icon: <WatchLater />, text: "Wath later" },
@@ -37,7 +37,6 @@ const links: { icon: React.ReactNode; text: string }[] = [
   { icon: <LikedVideos />, text: "Liked videos" },
   { icon: <Music />, text: "Music" },
   { icon: <Games />, text: "Games" },
-  { icon: <ShowMore />, text: "Show more" },
 ];
 
 const subscriptions: { avatar: string; name: string }[] = [
@@ -49,32 +48,17 @@ const subscriptions: { avatar: string; name: string }[] = [
   { avatar: "avatar-6", name: "Leah Berry" },
 ];
 
-export const Sidebar: React.FC<SidebarProps> = ({className, show}) => {
+export const Sidebar: React.FC<SidebarProps> = ({ className, show }) => {
   return (
-    <aside className={`${styles.sidebar} ${show && styles.show} ${className}`}>
-      <ul className={`${styles.links} ${styles["links-main"]}`}>
-        {mainLinks.map(({ icon, text, isActive }) => (
-          <li className={styles["links-item"]} key={text}>
-            <a
-              href="#"
-              className={`${styles.link} ${isActive && styles.active}`}
-            >
-              <div className={styles.icon}>{icon}</div>
-              <span>{text}</span>
-            </a>
-          </li>
-        ))}
-      </ul>
-      <ul className={styles.links}>
-        {links.map(({ icon, text }) => (
-          <li className={styles["links-item"]} key={text}>
-            <a href="#" className={styles.link}>
-              <div className={styles.icon}>{icon}</div>
-              <span>{text}</span>
-            </a>
-          </li>
-        ))}
-      </ul>
+    <aside
+      className={`${styles.sidebar} ${show ? styles.show : ""} ${className}`}
+    >
+      <LinksList className={styles["links-main"]} links={mainLinks} />
+      <LinksList
+        className={styles.categories}
+        links={links}
+        isShowMoreButton={true}
+      />
       <div className={styles.subscribers}>
         <Title className={styles.title} size="md" text="Subscriptions" />
         <ul className={styles["subscribers-list"]}>
@@ -89,8 +73,8 @@ export const Sidebar: React.FC<SidebarProps> = ({className, show}) => {
           ))}
         </ul>
       </div>
-      <a href="#" className={`${styles.link} ${styles["link-setting"]}`}>
-        <div className={styles.icon}>
+      <a href="#" className={styles["setting-link"]}>
+        <div className={styles["setting-link-icon"]}>
           <Setting />
         </div>
         <span>Setting</span>
