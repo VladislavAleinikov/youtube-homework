@@ -1,14 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./header.module.css";
-import {
-  Avatar,
-  Burger,
-  Button,
-  Camera,
-  Menu,
-  Notification,
-  Search,
-} from "../../../shared/ui";
+import { HeaderIcons } from "../../../entities/header-icons";
 import { SearchInput } from "../../../features";
 
 interface HeaderProps {
@@ -20,6 +12,12 @@ export const Header: React.FC<HeaderProps> = ({
   className,
   onToggleSidebar,
 }) => {
+  const [showIcons, setShowIcons] = useState(false);
+
+  const onShowIconsClick = () => {
+    setShowIcons((prev) => !prev);
+  };
+
   return (
     <header className={`${styles.header} ${className}`}>
       <div className={styles["header-left"]}>
@@ -32,18 +30,7 @@ export const Header: React.FC<HeaderProps> = ({
         <SearchInput id="search-input" placeholder="Search" />
       </div>
       <div className={styles.right}>
-        <div className={styles.icons}>
-          <Button variant="icon">
-            <Camera />
-          </Button>
-          <Button variant="icon">
-            <Menu />
-          </Button>
-          <Button className={styles.notifications} variant="icon">
-            <span className={styles["notifications-count"]}>3</span>
-            <Notification />
-          </Button>
-        </div>
+        <HeaderIcons show={showIcons} />
         <Avatar
           size="md"
           avatarUrl="http://localhost:5173/assets/avatars/avatar-1.png"
