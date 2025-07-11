@@ -7,7 +7,7 @@
 .main {
   margin-top: 25px;
   margin-left: 50px;
-  width: 1px;
+  min-width: 288px;
   display: flex;
   flex-grow: 1;
   gap: 40px;
