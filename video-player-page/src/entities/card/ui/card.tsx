@@ -1,16 +1,14 @@
 import React from "react";
-import styles from './card.module.css'
+import styles from "./card.module.css";
 import { Title } from "../../../shared/ui";
+import type { CardType } from "../../../shared/types";
 
-interface CardProps {
-  imgUrl: string;
-  title: string;
-  time: string;
-  views: string;
-  author: string;
+interface CardProps extends CardType {
+  className?: string;
 }
 
 export const Card: React.FC<CardProps> = ({
+  className,
   imgUrl,
   title,
   time,
@@ -18,7 +16,7 @@ export const Card: React.FC<CardProps> = ({
   author,
 }) => {
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} ${className}`}>
       <a href="#" className={styles["card-link"]}>
         <div className={styles.preview}>
           <img src={imgUrl} alt="preview" />

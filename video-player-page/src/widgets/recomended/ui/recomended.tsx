@@ -2,9 +2,14 @@ import React from "react";
 import { Card } from "../../../entities/card";
 import { Title } from "../../../shared/ui";
 import { Swithcer } from "../../../shared/ui";
-import styles from "./recomended.module.css"
+import styles from "./recomended.module.css";
+import type { CardType } from "../../../shared/types";
 
-const cards: React.ComponentProps<typeof Card>[] = [
+interface RecomendedProps {
+  className?: string;
+}
+
+const cards: CardType[] = [
   {
     imgUrl: "http://localhost:5173/assets/previews/preview-1.png",
     title: "Baby Monitor Technology",
@@ -35,9 +40,9 @@ const cards: React.ComponentProps<typeof Card>[] = [
   },
 ];
 
-export const Recomended = () => {
+export const Recomended: React.FC<RecomendedProps> = ({ className }) => {
   return (
-    <div className={styles.recomended}>
+    <div className={`${styles.recomended} ${className}`}>
       <Title size="xl" text="Next" />
       <Swithcer text="Autoplay"/>
       <ul className={styles.cards}>
