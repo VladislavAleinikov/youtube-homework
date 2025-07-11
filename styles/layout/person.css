@@ -1,0 +1,37 @@
+.person {
+  width: 100%;
+}
+
+.person__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.person__info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.person__avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.person__name {
+  display: inline-block;
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: #19202C;
+}
+
+@media (max-width: 576px) {
+  .person__top {
+    display: none;
+  }
+
+  .person__slider {
+    margin-top: unset;
+  }
+}

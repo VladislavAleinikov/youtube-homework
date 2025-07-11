@@ -1,26 +1,14 @@
 @import url("../base/fonts.css");
 @import url("../base/normalize.css");
-@import url("../layout/header.css");
-@import url("../layout/aside.css");
 @import url("../components/slider.css");
 @import url("../components/card.css");
 @import url("../components/controls.css");
 @import url("../components/button.css");
-
-/* ----------------- Fonts ----------------- */
-
-
-
-/* ----------------- Normalize ----------------- */
-
-
-/* ----------------- Header ----------------- */
-
-
-/* ----------------- Aside ----------------- */
-
-
-/* ----------------- Main ----------------- */
+@import url("../layout/header.css");
+@import url("../layout/aside.css");
+@import url("../layout/person.css");
+@import url("../layout/recomended.css");
+@import url("../layout/channel.css");
 
 main {
   width: 1px;
@@ -34,115 +22,10 @@ main {
   grid-area: main;
 }
 
-/* ----------------- Person ----------------- */
-
-.person {
-  width: 100%;
-}
-
-.person__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-
-.person__info {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.person__avatar {
-  width: 50px;
-  height: 50px;
-}
-
-.person__name {
-  display: inline-block;
-  font-size: 1.625rem;
-  font-weight: 700;
-  color: #19202C;
-}
-
-
-
-/* ----------------- Recomended ----------------- */
-
-.recomended {
-  width: 100%;
-}
-
-.recomended__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-
-/* ----------------- Recomended ----------------- */
-
-.channel {
-  width: 100%;
-}
-
-.channel__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-
-.channel__info {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 5px;
-}
-
-.channel__avatar {
-  width: 50px;
-  height: 50px;
-}
-
-.channel__avatar {
-  width: 50px;
-  height: 50px;
-}
-
-.channel__name {
-  display: inline-block;
-  font-size: 1.625rem;
-  font-weight: 700;
-  color: #19202C;
-}
-
-.channel__recomended {
-  color: #C2C2C2;
-}
-
-.channel__controls {
-  margin-left: 40px;
-}
-
 @media (max-width: 768px) {
   main {
     margin: 0;
     margin-top: 20px;
     gap: 30px;
-  }
-}
-
-@media (max-width: 576px) {
-  .person__top {
-    display: none;
-  }
-
-  .person__slider {
-    margin-top: unset;
-  }
-
-  .channel__top {
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
   }
 }
