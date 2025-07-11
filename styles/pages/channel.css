@@ -13,7 +13,7 @@
 @import url("../layout/last-video.css");
 
 main {
-  width: 1px;
+  min-width: 288px;
   margin-top: 25px;
   margin-left: 35px;
   flex-grow: 1;
