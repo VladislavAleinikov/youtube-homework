@@ -75,4 +75,43 @@
     fill: #FF0000;
   }
 }
+
+@media (max-width: 768px) {
+  .sidebar {
+    margin: 0;
+    padding: 0 28px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: unset;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #F1F1F1;
+    z-index: 1000;
+  }
+
+  .links-main {
+    width: calc(75% - 20px);
+  }
+
+  .sidebar ul.categories {
+    width: 25%;
+    height: unset;
+    overflow: unset;
+  }
+
+  .categories li:not(:first-child) {
+    display: none;
+  }
+
+  .subscribers {
+    display: none;
+  }
+
+  .setting-link {
+    display: none;
+  }
 }
