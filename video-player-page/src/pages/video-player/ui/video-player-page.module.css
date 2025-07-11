@@ -5,8 +5,19 @@
 }
 
 .main {
-  margin: 25px 70px 0 80px;
+  margin-top: 25px;
+  margin-left: 50px;
+  width: 1px;
   display: flex;
   flex-grow: 1;
   gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin: 0;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 0;
+  }
 }
