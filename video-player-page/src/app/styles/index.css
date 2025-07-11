@@ -26,6 +26,9 @@ html {
 
 #root {
   margin: auto;
+  margin-bottom: 60px;
+  padding-right: 70px;
+  padding-left: 30px;
   max-width: 1920px;
   width: 100%;
 }
@@ -56,7 +59,7 @@ li {
   list-style: none;
 }
 
-h1{
+h1 {
   color: #000000;
   font-size: 2.25rem;
 }
@@ -70,4 +73,36 @@ h3 {
   font-weight: 700;
   font-size: 1.125rem;
   color: #000000;
+}
+
+iframe {
+  border: none;
+}
+
+@media (max-width: 1200px) {
+  #root {
+    padding: 0 20px;
+  }
+
+  h1{
+    font-size: 1.625rem;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
 }
