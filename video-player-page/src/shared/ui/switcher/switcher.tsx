@@ -1,15 +1,12 @@
 import React from 'react'
 import styles from './swithcer.module.css'
 
-interface SwithcerProps{
+interface SwitcherProps {
   className?: string;
   text: string;
 }
 
-export const Swithcer: React.FC<SwithcerProps> = ({
-  className,
-  text
-}) => {
+export const Switcher: React.FC<SwitcherProps> = ({ className, text }) => {
   return (
     <label className={`${className} ${styles.label}`}>
       <span className={styles.text}>{text}</span>
@@ -19,4 +16,4 @@ export const Swithcer: React.FC<SwithcerProps> = ({
       </div>
     </label>
   );
-}
+};

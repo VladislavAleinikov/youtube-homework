@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "../../../entities/card";
 import { Title } from "../../../shared/ui";
-import { Swithcer } from "../../../shared/ui";
+import { Switcher } from "../../../shared/ui";
 import styles from "./recomended.module.css";
 import type { CardType } from "../../../shared/types";
 
@@ -44,7 +44,7 @@ export const Recomended: React.FC<RecomendedProps> = ({ className }) => {
   return (
     <div className={`${styles.recomended} ${className}`}>
       <Title size="xl" text="Next" />
-      <Swithcer text="Autoplay"/>
+      <Switcher text="Autoplay" />
       <ul className={styles.cards}>
         {cards.map((card) => (
           <li key={card.imgUrl}>
