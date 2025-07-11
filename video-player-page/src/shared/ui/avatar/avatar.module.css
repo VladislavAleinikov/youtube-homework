@@ -1,18 +1,25 @@
-.avatar{
+.avatar {
   border-radius: 100%;
 }
 
-.sm{
+.sm {
   width: 26px;
   height: 26px;
 }
 
-.md{
-   width: 40px;
-   height: 40px;
+.md {
+  width: 40px;
+  height: 40px;
 }
 
-.lg{
+.lg {
   width: 80px;
   height: 80px;
+}
+
+@media (max-width: 768px) {
+  .lg {
+    width: 50px;
+    height: 50px;
+  }
 }
