@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./header.module.css";
+import { Avatar, Burger, MoreVertical } from "../../../shared/ui";
 import { HeaderIcons } from "../../../entities/header-icons";
 import { SearchInput } from "../../../features";
 
@@ -34,7 +35,11 @@ export const Header: React.FC<HeaderProps> = ({
         <Avatar
           size="md"
           avatarUrl="http://localhost:5173/assets/avatars/avatar-1.png"
+          className={`${styles.avatar} ${styles["avatar-desc"]}`}
         />
+        <button className={styles["show-more"]} onClick={onShowIconsClick}>
+          <MoreVertical />
+        </button>
       </div>
     </header>
   );
