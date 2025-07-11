@@ -9,6 +9,7 @@ import {
   Notification,
   Search,
 } from "../../../shared/ui";
+import { SearchInput } from "../../../features";
 
 interface HeaderProps {
   className?: string;
@@ -28,17 +29,7 @@ export const Header: React.FC<HeaderProps> = ({
         <a href="#" className={styles.logo}>
           <img src="http://localhost:5173/assets/logo.png" alt="logo" />
         </a>
-        <label htmlFor="search-input" className={styles.search}>
-          <input
-            type="text"
-            className={styles["search-input"]}
-            id="search-input"
-            placeholder="Search"
-          />
-          <div className={styles["search-icon"]}>
-            <Search />
-          </div>
-        </label>
+        <SearchInput id="search-input" placeholder="Search" />
       </div>
       <div className={styles.right}>
         <div className={styles.icons}>
