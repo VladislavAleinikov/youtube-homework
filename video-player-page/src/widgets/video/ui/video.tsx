@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./video.module.css";
 import {
   Avatar,
@@ -7,6 +7,7 @@ import {
   Like,
   More,
   Share,
+  ShowMore,
   Title,
   VideoPlayer,
 } from "../../../shared/ui";
@@ -14,8 +15,21 @@ import {
 interface VideoProps{
   calssName?: string;
 }
+
+export const Video: React.FC<VideoProps> = ({calssName}) => {
+  const descriptionRef = useRef<HTMLParagraphElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
   const [like, setLike] = useState(false);
   const [dislike, setDislike] = useState(false);
+
+  const onShowDescriptionClick = () => {
+    if (!aboutRef.current || !descriptionRef.current) return;
+    
+    aboutRef.current.style.paddingBottom =
+      aboutRef.current.offsetHeight <= 80
+        ? descriptionRef.current.offsetHeight + 40 + "px"
+        : "20px";
+  };
 
   const onLike = () => {
     if (dislike) {
@@ -23,12 +37,14 @@ interface VideoProps{
     }
     setLike((prev) => !prev);
   };
+
   const onDislike = () => {
     if (like) {
       setLike(false);
     }
     setDislike((prev) => !prev);
   };
+
   return (
     <section className={`${styles.video} ${calssName}`}>
       <VideoPlayer className={styles.player} />
@@ -37,6 +53,13 @@ interface VideoProps{
         text="Dude You Re Getting A Telescope"
         className={styles.title}
       />
+      <Button
+        className={styles["show-description"]}
+        variant="icon"
+        onClick={onShowDescriptionClick}
+      >
+        <ShowMore />
+      </Button>
       <div className={styles.info}>
         <span className={styles.views}>123k views</span>
         <div className={styles.buttons}>
@@ -57,7 +80,7 @@ interface VideoProps{
           </Button>
         </div>
       </div>
-      <div className={styles.about}>
+      <div ref={aboutRef} className={styles.about}>
         <Avatar
           size="lg"
           avatarUrl="http://localhost:5173/assets/avatars/avatar-8.png"
@@ -65,7 +88,7 @@ interface VideoProps{
         <div className={styles.description}>
           <Title size="lg" text="Food & Drink" />
           <span className={styles.published}>Published on 14 Jun 2019</span>
-          <p className={styles.text}>
+          <p ref={descriptionRef} className={styles.text}>
             A successful marketing plan relies heavily on the pulling-power of
             advertising copy. Writing result-oriented ad copy is difficult, as
             it must appeal to, entice, and convince consumers to take action.
@@ -77,7 +100,9 @@ interface VideoProps{
             Show more
           </a>
         </div>
-        <Button className={styles.subscribe} variant="primary">Subscribe 2.3m</Button>
+        <Button className={styles.subscribe} variant="primary">
+          Subscribe 2.3m
+        </Button>
       </div>
     </section>
   );
