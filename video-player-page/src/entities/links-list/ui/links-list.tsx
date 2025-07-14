@@ -18,16 +18,20 @@ export const LinksList: React.FC<LinksListProps> = ({
   const showMoreRef = useRef<HTMLAnchorElement>(null);
 
   const onShowMoreClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (!linksRef.current || !showMoreRef.current) {
+      return;
+    }
+
     e.preventDefault();
 
-    if (linksRef.current?.classList.contains(styles.show)) {
-      linksRef.current?.classList.add(styles.hide);
-      linksRef.current?.classList.remove(styles.show);
+    if (linksRef.current.classList.contains(styles.show)) {
+      linksRef.current.classList.add(styles.hide); 
+      linksRef.current.classList.remove(styles.show);
     } else {
-      linksRef.current?.classList.add(styles.show);
-      linksRef.current?.classList.remove(styles.hide);
+      linksRef.current.classList.add(styles.show);
+      linksRef.current.classList.remove(styles.hide);
     }
-    showMoreRef.current?.classList.toggle(styles.active);
+    showMoreRef.current.classList.toggle(styles.active);
   };
 
   return (
