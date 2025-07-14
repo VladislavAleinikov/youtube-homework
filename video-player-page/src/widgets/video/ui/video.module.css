@@ -22,7 +22,7 @@
 
 .show-description path {
   width: 10px;
-  fill: #000000;
+  fill: var(--black);
   opacity: 1;
 }
 
@@ -37,7 +37,7 @@
 .views {
   margin-bottom: 5px;
   font-size: 1.25rem;
-  color: #C2C2C2;
+  color: var(--text-muted);
 }
 
 .buttons {
@@ -66,7 +66,7 @@
 .published {
   margin-top: 4px;
   font-size: .81rem;
-  color: #C2C2C2;
+  color: var(--text-muted);
 }
 
 .text {
@@ -79,7 +79,7 @@
 .show-more {
   margin-top: 15px;
   font-size: 1.25rem;
-  color: #C2C2C2;
+  color: var(--text-muted);
 }
 
 .show-more:hover {

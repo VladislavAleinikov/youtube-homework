@@ -38,12 +38,12 @@
 }
 
 .link.active span {
-  color: #FF0000;
+  color: var(--red);
 }
 
 .link.active path {
   opacity: 1;
-  fill: #FF0000;
+  fill: var(--red);
 }
 
 .show-more svg {
@@ -73,12 +73,12 @@
 
 @media(hover: hover) {
   .link:hover span {
-    color: #FF0000;
+    color: var(--red);
   }
 
   .link:hover path {
     opacity: 1;
-    fill: #FF0000;
+    fill: var(--red);
   }
 }
 

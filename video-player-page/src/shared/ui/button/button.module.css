@@ -7,19 +7,19 @@
 
 .primary {
   margin-left: auto;
-  background: #FF0000;
+  background: var(--red);
   border-radius: 20px;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
 .ghost {
   border-radius: 20px;
   color: #192646;
-  background: #ebebeb4d;
+  background: rgba(var(--bg-ghost), 0.302);
 }
 
 .active {
-  background: #00000033;
+  background: rgba(var(--black), 0.2);
 }
 
 .icon {
@@ -29,7 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #FFFFFF;
+  background: var(--white);
   border-radius: 100%;
 }
 
@@ -43,14 +43,14 @@
   }
 
   .icon:hover {
-    background: #EBEBEB;
+    background: var(--bg-ghost);
   }
 }
 
 @media (max-width: 576px) {
   .primary {
     padding: 0;
-    color: #FF0000;
-    background: #FFFFFF;
+    color: var(--red);
+    background: var(--white);
   }
 }

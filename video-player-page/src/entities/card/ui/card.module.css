@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FFFFFF;
+  color: var(--white);
   font-size: 14px;
   background: rgba(0, 0, 0, .3);
   border-radius: 12px;
@@ -25,7 +25,7 @@
 
 .title {
   margin-top: 15px;
-  color: #19202C;
+  color: var(--name-color);
 }
 
 .info {
@@ -35,7 +35,7 @@
 .meta,
 .author {
   font-size: 1.125rem;
-  color: #C2C2C2;
+  color: var(--text-muted);
 }
 
 .author {

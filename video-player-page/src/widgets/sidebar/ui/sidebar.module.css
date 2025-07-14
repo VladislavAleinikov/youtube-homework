@@ -3,7 +3,7 @@
   max-width: 255px;
   padding: 0;
   width: 0%;
-  background: #FFFFFF;
+  background: var(--white);
   grid-area: aside;
   overflow: hidden;
   transition: .3s;
@@ -44,7 +44,7 @@
 }
 
 .subscriber:hover span {
-  color: #000000;
+  color: var(--black);
 }
 
 .setting-link {
@@ -67,12 +67,12 @@
 
 @media (hover: hover) {
   .setting-link:hover span {
-    color: #FF0000;
+    color: var(--red);
   }
 
   .setting-link:hover path {
     opacity: 1;
-    fill: #FF0000;
+    fill: var(--red);
   }
 }
 
