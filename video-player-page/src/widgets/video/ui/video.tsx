@@ -13,10 +13,10 @@ import {
 } from "../../../shared/ui";
 
 interface VideoProps{
-  calssName?: string;
+  className?: string;
 }
 
-export const Video: React.FC<VideoProps> = ({calssName}) => {
+export const Video: React.FC<VideoProps> = ({className}) => {
   const descriptionRef = useRef<HTMLParagraphElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const [like, setLike] = useState<boolean>(false);
@@ -46,7 +46,7 @@ export const Video: React.FC<VideoProps> = ({calssName}) => {
   };
 
   return (
-    <section className={`${styles.video} ${calssName}`}>
+    <section className={`${styles.video} ${className}`}>
       <VideoPlayer className={styles.player} />
       <Title
         size="xl"
