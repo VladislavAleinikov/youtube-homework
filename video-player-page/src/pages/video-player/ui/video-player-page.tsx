@@ -6,7 +6,7 @@ import { Video } from "../../../widgets/video";
 import { Sidebar } from "../../../widgets/sidebar";
 
 export const VideoPlayerPage = () => {
-  const [showSidebar, setShowSidebar] = useState(false);
+  const [showSidebar, setShowSidebar] = useState<boolean>(false);
 
   const onToggleSidebar = () => setShowSidebar((prev) => !prev);
 

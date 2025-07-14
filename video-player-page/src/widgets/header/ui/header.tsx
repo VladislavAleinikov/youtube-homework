@@ -13,7 +13,7 @@ export const Header: React.FC<HeaderProps> = ({
   className,
   onToggleSidebar,
 }) => {
-  const [showIcons, setShowIcons] = useState(false);
+  const [showIcons, setShowIcons] = useState<boolean>(false);
 
   const onShowIconsClick = () => {
     setShowIcons((prev) => !prev);

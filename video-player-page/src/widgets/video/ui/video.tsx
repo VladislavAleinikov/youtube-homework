@@ -19,8 +19,8 @@ interface VideoProps{
 export const Video: React.FC<VideoProps> = ({calssName}) => {
   const descriptionRef = useRef<HTMLParagraphElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
-  const [like, setLike] = useState(false);
-  const [dislike, setDislike] = useState(false);
+  const [like, setLike] = useState<boolean>(false);
+  const [dislike, setDislike] = useState<boolean>(false);
 
   const onShowDescriptionClick = () => {
     if (!aboutRef.current || !descriptionRef.current) return;
