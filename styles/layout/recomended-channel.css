@@ -21,7 +21,7 @@
 .recomended-channel__name {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #19202C;
+  color: var(--name-color);
 }
 
 

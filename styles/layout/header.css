@@ -39,7 +39,7 @@
   margin-top: 5px;
   margin-left: 10px;
   font-weight: 700;
-  color: #19202C;
+  color: var(--name-color);
   white-space: nowrap;
 }
 
@@ -93,9 +93,9 @@
   font-size: 0.75rem;
   font-weight: 700;
   color: white;
-  border: 1px solid #FFFFFF;
+  border: 1px solid var(--white);
   border-radius: 100%;
-  background: #FF0000;
+  background: var(--red);
 }
 
 .header__show-more {
@@ -150,9 +150,9 @@
     position: absolute;
     right: 0;
     bottom: -60px;
-    background: #FFFFFF;
+    background: var(--white);
     border-radius: 30px;
-    box-shadow: 1px 1px 10px #000000;
+    box-shadow: 1px 1px 10px var(--black);
     opacity: 0;
     visibility: hidden;
     transition: opacity .3s;

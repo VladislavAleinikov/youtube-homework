@@ -2,9 +2,9 @@
   cursor: pointer;
   margin-left: auto;
   padding: 10px 20px;
-  background: #FF0000;
+  background: var(--red);
   border-radius: 20px;
-  color: #FFFFFF;
+  color: var(--white);
   white-space: nowrap;
   transition: background .3s;
 }
@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #FFFFFF;
+  background: var(--white);
   border-radius: 100%;
   transition: background .3s;
 }

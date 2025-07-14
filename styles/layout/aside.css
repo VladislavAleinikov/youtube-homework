@@ -3,7 +3,7 @@
   max-width: 190px;
   padding: 0;
   width: 0%;
-  background: #FFFFFF;
+  background: var(--white);
   grid-area: aside;
   overflow: hidden;
   transition: .3s;
@@ -53,12 +53,12 @@
 }
 
 .aside__link.link--active span {
-  color: #FF0000;
+  color: var(--red);
 }
 
 .aside__link.link--active path {
   opacity: 1;
-  fill: #FF0000;
+  fill: var(--red);
 }
 
 .aside__show-more svg {
@@ -118,20 +118,20 @@
 @media(hover: hover) {
 
   .aside__link:hover span {
-    color: #FF0000;
+    color: var(--red);
   }
 
   .aside__link:hover path {
     opacity: 1;
-    fill: #FF0000;
+    fill: var(--red);
   }
 
   .aside__sub:hover span {
-    color: #000000;
+    color: var(--black);
   }
 
   .aside__sub:hover span {
-    color: #000000;
+    color: var(--black);
   }
 }
 

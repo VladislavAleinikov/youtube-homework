@@ -27,15 +27,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FFFFFF;
+  color: var(--white);
   font-size: 14px;
-  background: rgba(0, 0, 0, .3);
+  background: rgba(var(--black), .3);
   border-radius: 12px;
 }
 
 .card__info-title {
   margin-top: 10px;
-  color: #19202C;
+  color: var(--name-color);
 }
 
 .card--full .card__info-title {
@@ -47,13 +47,13 @@
   margin-top: 10px;
   max-width: 550px;
   line-height: 22px;
-  color: #00000099;
+  color: hsla(0, 0%, 0%, 0.6);
 }
 
 .card__info-meta,
 .card__info-author {
   font-size: 0.81rem;
-  color: #C2C2C2;
+  color: var(--text-muted);
 }
 
 .card--full .card__info-meta {

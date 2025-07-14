@@ -7,7 +7,13 @@
 html {
   font-family: "Mulish", sans-serif;
   font-size: 16px;
-  color: #898989;
+  --black: #000000;
+  --white: #FFFFFF;
+  --red: #FF0000;
+  --name-color: #19202C;
+  --text: #898989;
+  --text-muted: #C2C2C2;
+  color: var(----text);
 }
 
 body {
@@ -59,29 +65,29 @@ li {
 
 h2 {
   font-size: 1.6rem;
-  color: #000000;
+  color: var(--black);
 }
 
 h3 {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #000000;
+  color: var(--black);
 }
 
 h6 {
   font-size: 1rem;
   font-weight: 400;
-  color: #C2C2C2;
+  color: var(--text-muted);
 }
 
 @media (max-width: 1200px) {
-  body{
+  body {
     padding: 0 20px;
   }
 }
 
 @media (max-width: 768px) {
-  body{
+  body {
     padding: 0 16px;
   }
 }

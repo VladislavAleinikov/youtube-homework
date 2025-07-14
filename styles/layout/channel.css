@@ -30,11 +30,11 @@
   display: inline-block;
   font-size: 1.625rem;
   font-weight: 700;
-  color: #19202C;
+  color: var(--name-color);
 }
 
 .channel__recomended {
-  color: #C2C2C2;
+  color: var(--text-muted);
 }
 
 .channel__controls {
