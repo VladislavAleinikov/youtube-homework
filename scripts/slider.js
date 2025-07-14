@@ -1,4 +1,6 @@
-document.querySelectorAll(".slider").forEach(addSliderEvents);
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".slider").forEach(addSliderEvents);
+});
 
 function addSliderEvents(slider) {
   const sliderFor = slider.dataset.sliderFor;
