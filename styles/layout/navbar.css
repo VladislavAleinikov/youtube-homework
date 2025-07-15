@@ -1,10 +1,10 @@
 .navbar {
+  position: relative;
   margin-top: 15px;
   grid-area: navbar;
 }
 
 .navbar__list {
-  position: relative;
   max-width: 834px;
   width: 100%;
   display: flex;
@@ -12,11 +12,11 @@
   justify-content: space-between;
 }
 
-.navbar__list::after {
-  content: '';
+.navbar__popup {
   position: absolute;
+  padding: 20px;
+  left: 180px;
   bottom: -180px;
-  right: 0;
   width: 100px;
   height: 170px;
   background: var(--white);
@@ -26,6 +26,15 @@
   visibility: hidden;
   transition: .3s;
   z-index: 10;
+}
+
+.navbar__popup .navbar__list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: unset;
 }
 
 .navbar__item {
@@ -85,7 +94,7 @@
     gap: 35px;
   }
 
-  .navbar__list--show::after {
+  .navbar__popup--show {
     opacity: 1;
     visibility: visible;
   }
@@ -95,35 +104,7 @@
   }
 
   .navbar__item:nth-child(n+4):nth-child(-n+7) {
-    position: absolute;
-    right: 50px;
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s;
-    transform: translateX(50%);
-    z-index: 100;
-
-  }
-
-  .navbar__list--show .navbar__item:nth-child(n+4):nth-child(-n+7) {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .navbar__item:nth-child(4) {
-    bottom: -50px;
-  }
-
-  .navbar__item:nth-child(5) {
-    bottom: -90px;
-  }
-
-  .navbar__item:nth-child(6) {
-    bottom: -130px;
-  }
-
-  .navbar__item:nth-child(7) {
-    bottom: -170px;
+    display: none;
   }
 
   .navbar__show-more {
