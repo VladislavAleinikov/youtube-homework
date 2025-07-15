@@ -11,7 +11,7 @@
 @import url("../layout/channel.css");
 
 main {
-  min-width: 288px;
+  width: 288px;
   flex-grow: 1;
   margin-top: 45px;
   margin-left: 35px;
