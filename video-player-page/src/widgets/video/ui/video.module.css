@@ -1,0 +1,168 @@
+.video {
+  width: 100%;
+}
+
+.player {
+  width: 100%;
+  max-height: 700px;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+}
+
+.title {
+  margin-top: 20px;
+}
+
+.show-description {
+  display: none;
+  margin-left: auto;
+  width: 15px;
+  height: 15px;
+}
+
+.show-description path {
+  width: 10px;
+  fill: var(--black);
+  opacity: 1;
+}
+
+.info {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.views {
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button-text {
+  margin-left: 8px;
+}
+
+.about {
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  align-items: start;
+  overflow: hidden;
+}
+
+.description {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.published {
+  margin-top: 4px;
+  font-size: .81rem;
+  color: var(--text-muted);
+}
+
+.text {
+  margin-top: 15px;
+  max-width: 820px;
+  opacity: .6;
+  line-height: 22px;
+}
+
+.show-more {
+  margin-top: 15px;
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
+.show-more:hover {
+  color: #a7a6a6;
+}
+
+.subscribe {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+.video{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+  .player {
+    margin: 0 -16px;
+    width: 100vw;
+    border-radius: 0;
+  }
+
+  .title {
+    margin-top: 15px;
+    max-width: 210px;
+  }
+
+  .views {
+    margin-top: 5px;
+  }
+
+  .show-description {
+    display: block;
+  }
+
+  .info {
+    width: 100%;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  .views {
+    margin-top: 10px;
+    font-size: 0.75rem;
+  }
+
+  .buttons {
+    margin-top: 15px;
+    gap: 5px;
+  }
+
+  .buttons button:last-child {
+    display: none;
+  }
+
+  .button-text {
+    margin-left: 2px;
+  }
+
+  .about {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    border-bottom: 1px solid #D8D8D8;
+    overflow: hidden;
+    transition: padding-bottom .3s;
+  }
+
+  .published {
+    font-size: 0.75rem;
+  }
+
+  .text {
+    margin-top: 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+  }
+
+  .show-more {
+    display: none;
+  }
+}

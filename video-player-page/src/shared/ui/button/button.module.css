@@ -1,0 +1,56 @@
+.button {
+  cursor: pointer;
+  padding: 10px 20px;
+  white-space: nowrap;
+  transition: background .3s, color .3s;
+}
+
+.primary {
+  margin-left: auto;
+  background: var(--red);
+  border-radius: 20px;
+  color: var(--white);
+}
+
+.ghost {
+  border-radius: 20px;
+  color: #192646;
+  background: rgba(var(--bg-ghost), 0.302);
+}
+
+.active {
+  background: rgba(var(--black), 0.2);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white);
+  border-radius: 100%;
+}
+
+@media(hover: hover) {
+  .primary:hover {
+    background: #e20000;
+  }
+
+  .ghost:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .icon:hover {
+    background: var(--bg-ghost);
+  }
+}
+
+@media (max-width: 576px) {
+  .primary {
+    padding: 0;
+    color: var(--red);
+    background: var(--white);
+  }
+}

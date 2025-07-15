@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/Mulish-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/Mulish-Bold.ttf") format("ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  --black: #000000;
+  --white: #FFFFFF;
+  --red: #FF0000;
+  --name-color: #19202C;
+  --text: #898989;
+  --text-muted: #C2C2C2;
+  --bg-ghost: #EBEBEB;
+  color: var(--text-muted);
+}
+
+#root {
+  margin: auto;
+  margin-bottom: 60px;
+  padding-right: 70px;
+  padding-left: 30px;
+  max-width: 1920px;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+input[type=text] {
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  color: var(--black);
+  font-size: 2.25rem;
+}
+
+h2 {
+  color: var(--black);
+  font-size: 1.625rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--black);
+}
+
+iframe {
+  border: none;
+}
+
+@media (max-width: 1200px) {
+  #root {
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 1.625rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
