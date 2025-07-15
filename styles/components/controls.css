@@ -1,0 +1,45 @@
+.controls {
+  margin-left: auto;
+  margin-right: 80px;
+  white-space: nowrap;
+}
+
+.controls__left {
+  margin-right: 10px;
+}
+
+.controls button {
+  cursor: pointer;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  background: var(--black);
+  border-radius: 100%;
+  opacity: .25;
+  transition: opacity .3s;
+}
+
+.controls img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media(hover: hover) {
+  .controls button:hover {
+    opacity: 1;
+  }
+}
+
+@media(max-width: 1200px){
+  .controls{
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .controls{
+    display: none;
+  }
+}

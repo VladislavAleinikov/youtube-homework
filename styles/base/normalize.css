@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  --black: #000000;
+  --white: #FFFFFF;
+  --red: #FF0000;
+  --name-color: #19202C;
+  --text: #898989;
+  --text-muted: #C2C2C2;
+  color: var(----text);
+}
+
+body {
+  margin: auto;
+  margin-bottom: 60px;
+  padding-right: 70px;
+  padding-left: 30px;
+  max-width: 1920px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 255px auto;
+  grid-template-areas:
+    "header header"
+    "aside main";
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+input[type=text] {
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: var(--black);
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,46 @@
+@import url("../base/fonts.css");
+@import url("../base/normalize.css");
+@import url("../components/slider.css");
+@import url("../components/card.css");
+@import url("../components/controls.css");
+@import url("../components/button.css");
+@import url("../layout/header.css");
+@import url("../layout/hero.css");
+@import url("../layout/aside.css");
+@import url("../layout/navbar.css");
+@import url("../layout/recomended-channel.css");
+@import url("../layout/videos.css");
+@import url("../layout/last-video.css");
+
+main {
+  width: 288px;
+  margin-top: 25px;
+  margin-left: 35px;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 270px;
+  grid-template-rows: 390px 50px auto 270px;
+  grid-template-areas:
+    "hero hero"
+    "navbar recomended"
+    "last-video recomended"
+    "videos videos";
+  column-gap: 10px;
+  overflow: hidden;
+}
+
+
+@media (max-width: 1200px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 0;
+    margin-top: 15px;
+    gap: 0;
+  }
+}

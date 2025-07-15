@@ -1,0 +1,9 @@
+.recomended {
+  width: 100%;
+}
+
+.recomended__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}

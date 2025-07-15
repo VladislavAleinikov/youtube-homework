@@ -1,0 +1,26 @@
+.videos {
+  margin-top: 60px;
+  grid-area: videos;
+  width: 100%;
+}
+
+.videos__top {
+  margin-left: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+@media (max-width: 768px) {
+  .videos {
+    margin-top: 15px;
+  }
+
+  .videos__slider {
+    margin-top: 0;
+  }
+
+  .videos__top {
+    display: none;
+  }
+}

@@ -1,0 +1,10 @@
+.last-video {
+  margin-top: 50px;
+  grid-area: last-video;
+}
+
+@media (max-width: 768px) {
+  .last-video {
+    display: none;
+  }
+}

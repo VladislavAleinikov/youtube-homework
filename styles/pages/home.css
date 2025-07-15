@@ -1,0 +1,31 @@
+@import url("../base/fonts.css");
+@import url("../base/normalize.css");
+@import url("../components/slider.css");
+@import url("../components/card.css");
+@import url("../components/controls.css");
+@import url("../components/button.css");
+@import url("../layout/header.css");
+@import url("../layout/aside.css");
+@import url("../layout/person.css");
+@import url("../layout/recomended.css");
+@import url("../layout/channel.css");
+
+main {
+  width: 288px;
+  flex-grow: 1;
+  margin-top: 45px;
+  margin-left: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  overflow: hidden;
+  grid-area: main;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 0;
+    margin-top: 20px;
+    gap: 30px;
+  }
+}
